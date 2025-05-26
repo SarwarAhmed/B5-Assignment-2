@@ -84,7 +84,7 @@ FROM species sp
 LEFT JOIN sightings s ON sp.species_id = s.species_id
 WHERE s.sighting_id IS NULL;
 
--- Problem 6 Show the most recent 2 sightings.
+-- Problem 6
 SELECT sp.species_common_name, s.species_time, r.ranger_name
 FROM sightings s
 JOIN rangers r ON s.ranger_id = r.ranger_id
